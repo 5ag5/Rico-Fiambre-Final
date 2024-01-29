@@ -24,7 +24,7 @@ public class RicoFiambreApplication {
 		return (args) -> {
 			//CREACION DE CLIENTES
 			Cliente cliente01 = (new Cliente("Juanjo", "Sepaso","juanjo@mail.com","Av. Siempreviva 123", "Springfield", 2400, "2604-112233", passwordEncoder.encode("Juanjo123")));
-			Cliente cliente02 = (new Cliente("Melba", "Morel","melba@mindhub.com","Av. Nuncaviva 321", "Shelbyville", 5600, "2604-112247", passwordEncoder.encode("Melba123")));
+			Cliente cliente02 = (new Cliente("Melba", "Morel","agonzalez555.gg@gmail.com","Av. Nuncaviva 321", "Shelbyville", 5600, "2604-112247", passwordEncoder.encode("Melba123")));
 			Cliente admin01 = (new Cliente("admin", "istrador","admin@admin.com","Av. Todo Permitido 322", "Usa", 5600, "2604-312123", passwordEncoder.encode("Admin123")));
 
 			//CREACION DE PRODUCTO POR PESO

@@ -32,7 +32,7 @@ public final class PagarConTarjetaUtilidad {
         }
 
         try {
-            URL url = new URL("https://homebanking-v3ar.onrender.com/api/card/payment");
+            /*URL url = new URL("https://homebanking-v3ar.onrender.com/api/card/payment");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setRequestProperty("Content-Type", "application/json");
@@ -55,8 +55,9 @@ public final class PagarConTarjetaUtilidad {
                 connection.getInputStream().close();
                 connection.disconnect();
 
-                return new ResponseEntity<>("Pago rechazado", HttpStatus.FORBIDDEN);
-            }
+                //return new ResponseEntity<>("Pago rechazado", HttpStatus.FORBIDDEN);
+            }*/
+            return new ResponseEntity<>("Pago aceptado", HttpStatus.CREATED);
         } catch (Exception err) {
             err.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error al realizar el pago");
